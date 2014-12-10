@@ -1,0 +1,135 @@
+#+TITLE: Emacs cheat sheat
+#+AUTHOR: Roland Schultheiﬂ
+#+STARTUP: showall
+
+* Editing
+| Anfang line                    | C-a          |
+| Anfang paragraph               | M-a          |
+| Ende line                      | C-e          |
+| Ende paragraph                 | M-e          |
+| Del under cursor               | C-d          |
+| mark entire buffer             | C-x h        |
+| Return and new line            | C-m          |
+| Stay but new line              | C-o          |
+| Count words in marked region   | M-=          |
+| re-center line                 | C-l          |
+| insert comment environment     | M-;          |
+| shell (previous comand)        | M-p          |
+| dired (update directory)       | g            |
+| Start macro record             | C-x (        |
+| Stop record macro              | C-x )        |
+| Execute 37 times               | C-u 37 C-x e |
+| Kill text of region-rectangle  | C-x r k      |
+| Yank the last killed rectangle | C-x r y      |
+
+* Spell checking
+| Skip this word                                    | SPC       |
+| Replace the word (just this time) with new        | r new RET |
+| Replace the word with new, and do a query-replace | R new RET |
+| Insert this word in your private dictionary       | i         |
+
+* Searching
+| search string at cursor      | C-s C-w |
+| word search                  | M-s w   |
+| rec editing in query/replace | C-r     |
+| resume query after rec edit  | C-M-c   |
+
+* Org-mode
+| open Reftex                            | C-c )           |
+| add tag (headline)                     | C-c C-c         |
+| follow link                            | C-c C-o         |
+| add link                               | C-c C-l         |
+| format table                           | C-c C-c         |
+| insert TODO item                       | C-c C-t         |
+| Schedule TODO item                     | C-c C-s         |
+| insert time stamp (shows in Agenda)    | C-c .           |
+| inactive time stamp (does not show up) | C-c !           |
+| internal link target                   | <<identifier>>  |
+| internal link                          | [[identidier]   |
+| refresh tag/TODO line in file header   | C-c C-c on line |
+| generate table using whitespace        | C-c |           |
+
+* org-mode workflow
+| make new entry to refile from anywhere | C-c c   |
+| refile items                           | C-c C-w |
+| add tag                                | C-c C-c |
+| insert TODO item                       | C-c C-t |
+| open Agenda                            | C-c a   |
+| Schedule item                          | C-c C-s |
+| Deadline item                          | C-c C-d |
+| Archive item in agenda view            | a y     |
+
+* Markdown
+| open Reftex | C-c [ |
+
+* Magit
+| create tag                  | t (toggle -a for annotation)  |
+| checkout commit             | b b (enter hash tag)          |
+| after checkout              | M-x revert-buffer             |
+| enter git cmd               | :                             |
+| discard uncommitted changed | k                             |
+| Remote manager              | M                             |
+| add bare repo/remote        | : init --bare <pathWith*.git> |
+| push to remote              | P P                           |
+| pull from remote            | F F                           |
+
+* Package manager
+| install package   | i |
+| delete package    | d |
+| execute selection | x |
+  
+* Bookmarks
+| set bookmark      | C-x r m |
+| jump to bookmark  | C-x r b |
+| list of bookmarks | C-x r l |
+
+* gnus
+| open group will all mails          | C-u RET     |                                                 |
+| open group summary                 | RET         |                                                 |
+| quit buffer                        | q           |                                                 |
+| mark mail/ group                   | #           |                                                 |
+| unmark mail/group                  | M-#         |                                                 |
+| search (marked) group              | G G         |                                                 |
+| reply with quotes text             | R           |                                                 |
+| reply without quotes text          | r           |                                                 |
+| reply to all (quoted)              | S W         |                                                 |
+| reply to all (not quoted)          | S w         |                                                 |
+| attach file                        | C-c C-a     |                                                 |
+| send email                         | C-c C-c     |                                                 |
+| download attachment                | o           |                                                 |
+| open attachment                    | RET on link |                                                 |
+| compose email                      | a           | or C-x m from anywhere in emacs                 |
+| forward (marked) mail              | C-c C-f     |                                                 |
+| refresh group /check for new mail  | / N         |                                                 |
+| check new mails in groups overview | g           |                                                 |
+| flag message (star in Gmail)       | !           |                                                 |
+| unflag message                     | M-u         |                                                 |
+| set RSS feed                       | G m         | -> build group, nnrss as methods then paste URL |
+| mark email as read                 | d           |                                                 |
+| show all groups                    | A A         |                                                 |
+
+* bibtex/ebib
+| bibtex-reformat                                                             | formate the entrire buffer |
+| bibtex-sort-buffer                                                          | sorts buffer               |
+| start ebib                                                                  | M-x ebib                   |
+| open bib file in ebib                                                       | o                          |
+| change focus to entry buffer                                                | e (in index buffer)        |
+| search database                                                             | /                          |
+| next search occurence                                                       | n                          |
+| (un)select entries                                                          | m                          |
+| save database                                                               | s                          |
+| editing entry buffer                                                        | e                          |
+| lower ebib                                                                  | z                          |
+| quit ebib                                                                   | q                          |
+| add entry ebib                                                              | a                          |
+| change key of entry                                                         | E                          |
+| recreate autogenerated key                                                  | K                          |
+| delet entry                                                                 | d                          |
+| push entry to Latex buffer                                                  | p                          |
+| merge file with database                                                    | M-x ebib-merge-bibtex-file |
+| import bib entry from buffer                                                | M-x ebib-import            |
+| export entry to bib file                                                    | e                          |
+| extract a filename from the file field and send it to an appropriate viewer | f                          |
+| extract a URL from the url field and send it to a browser.                  | u                          |
+
+
